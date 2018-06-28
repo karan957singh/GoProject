@@ -1,0 +1,5 @@
+fooType := reflect.TypeOf(Foo{})
+for i := 0; i < fooType.NumMethod(); i++ {
+    method := fooType.Method(i)
+    fmt.Println(method.Name)
+}
